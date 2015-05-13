@@ -1,0 +1,30 @@
+{
+  "name": "furkot-kml",
+  "version": "0.0.0",
+  "description": "Generate KML file from Furkot trip data.",
+  "homepage": "https://trips.furkot.com",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@code42day.com",
+    "url": "https://code42day.com"
+  },
+  "repository": "furkot/furkot-kml",
+  "license": "MIT",
+  "keywords": [
+    "furkot-kml",
+    "furkot",
+    "roadtrip",
+    "export",
+    "planner",
+    "KML"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
+  },
+  "scripts": {
+    "test": "make check"
+  }
+}
