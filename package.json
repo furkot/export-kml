@@ -18,7 +18,9 @@
     "planner",
     "KML"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "gexode": "^0.1.0"
+  },
   "devDependencies": {
     "jshint": "^2.7.0",
     "mocha": "^2.2.4",
