@@ -1,3 +1,4 @@
+var should = require('should');
 var fs = require('fs');
 var path = require('path');
 var kml = require('../');
@@ -22,5 +23,19 @@ describe('furkot-kml node module', function () {
 
     generated.should.eql(expected);
 
+  });
+
+  it('day routes', function() {
+    var t = require('./fixtures/day-routes.json'),
+      generated = kml(t),
+      expected = readFileSync('fixtures/day-routes.kml');
+
+    generated.should.eql(expected);
+
+  });
+
+  it('empty polyline', function () {
+    var t = require('./fixtures/empty-polyline.json');
+    should.exist(kml(t));
   });
 });
