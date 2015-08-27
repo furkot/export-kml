@@ -6,4 +6,7 @@ lint:
 test:
 	./node_modules/.bin/mocha --recursive --require should
 
-.PHONY: check lint test
+validate:
+	xmllint --noout --schema http://www.opengis.net/kml/2.2 test/fixtures/*.kml
+
+.PHONY: check lint test validate
