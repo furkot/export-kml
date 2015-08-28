@@ -34,6 +34,15 @@ describe('furkot-kml node module', function () {
 
   });
 
+  it('day tracks', function() {
+    var t = require('./fixtures/day-tracks.json'),
+      generated = kml(t),
+      expected = readFileSync('fixtures/day-tracks.kml');
+
+    generated.should.eql(expected);
+
+  });
+
   it('empty polyline', function () {
     var t = require('./fixtures/empty-polyline.json');
     should.exist(kml(t));
