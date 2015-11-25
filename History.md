@@ -1,4 +1,9 @@
 
+1.0.2 / 2015-11-25
+==================
+
+ * discard route if rendering it as set of waypoints
+
 1.0.1 / 2015-08-28
 ==================
 
