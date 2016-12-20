@@ -1,129 +1,139 @@
 {
-  "metadata" : {
-    "name" : "sample",
-    "units" : "m",
-    "author" : {
-      "name" : "Furkot - road trip planner",
-      "short_name" : "Furkot",
-      "email" : {
-        "id" : "trips",
-        "domain" : "furkot.com"
+  "metadata": {
+    "name": "sample",
+    "units": "m",
+    "author": {
+      "name": "Furkot - road trip planner",
+      "short_name": "Furkot",
+      "email": {
+        "id": "trips",
+        "domain": "furkot.com"
       },
-      "link" : "https://trips.furkot.com"
+      "link": "https://trips.furkot.com"
     }
   },
-    "waypoints" : [
-      {
-        "coordinates" : {
-          "lat" : 40.38901792992331,
-          "lon" : -105.56204795837402
-        },
-        "skip" : false,
-        "visit_duration" : 3600000,
-        "name" : "begin",
-        "notes" : "",
-        "locality" : {
-          "town" : "Estes Park",
-          "province" : "CO",
-          "province_long" : "Colorado",
-          "country" : "US",
-          "country_long" : "United States"
-        },
-        "address" : "1050 Fall River Court, Estes Park, CO 80517, USA",
-        "arrival_time" : 1415109600000,
-        "departure_time" : 1415113200000
+  "waypoints": [
+    {
+      "coordinates": {
+        "lat": 40.38901792992331,
+        "lon": -105.56204795837402
       },
-      {
-        "coordinates" : {
-          "lat" : 40.39450095251464,
-          "lon" : -105.56532025337219
+      "skip": false,
+      "visit_duration": 3600000,
+      "name": "begin",
+      "notes": "",
+      "locality": {
+        "town": "Estes Park",
+        "province": "CO",
+        "province_long": "Colorado",
+        "country": "US",
+        "country_long": "United States"
+      },
+      "address": "1050 Fall River Court, Estes Park, CO 80517, USA",
+      "arrival_time": 1415109600000,
+      "departure_time": 1415113200000
+    },
+    {
+      "coordinates": {
+        "lat": 40.39450095251464,
+        "lon": -105.56532025337219
+      },
+      "skip": false,
+      "visit_duration": 0,
+      "name": "nocleg",
+      "notes": "",
+      "locality": {
+        "town": "Estes Park",
+        "province": "CO",
+        "province_long": "Colorado",
+        "country": "US",
+        "country_long": "United States"
+      },
+      "address": "1354-1400 David Drive, Estes Park, CO 80517, USA",
+      "arrival_time": 1415196013000,
+      "departure_time": 1415282400000
+    }
+  ],
+  "tracks": [
+    {
+      "points": [
+        {
+          "coordinates": {
+            "lat": 40.38901792992331,
+            "lon": -105.56204795837402
+          },
+          "skip": false,
+          "visit_duration": 3600000,
+          "name": "begin",
+          "notes": "",
+          "locality": {
+            "town": "Estes Park",
+            "province": "CO",
+            "province_long": "Colorado",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "address": "1050 Fall River Court, Estes Park, CO 80517, USA",
+          "arrival_time": 1415109600000,
+          "departure_time": 1415113200000
         },
-        "skip" : false,
-        "visit_duration" : 0,
-        "name" : "nocleg",
-        "notes" : "",
-        "locality" : {
-          "town" : "Estes Park",
-          "province" : "CO",
-          "province_long" : "Colorado",
-          "country" : "US",
-          "country_long" : "United States"
-        },
-        "address" : "1354-1400 David Drive, Estes Park, CO 80517, USA",
-        "arrival_time" : 1415196013000,
-        "departure_time" : 1415282400000
-      } ],
-  "tracks" : [
-      {
-        "points" : [
-            {
-              "coordinates" : {
-                "lat" : 40.38901792992331,
-                "lon" : -105.56204795837402
-              },
-              "skip" : false,
-              "visit_duration" : 3600000,
-              "name" : "begin",
-              "notes" : "",
-              "locality" : {
-                "town" : "Estes Park",
-                "province" : "CO",
-                "province_long" : "Colorado",
-                "country" : "US",
-                "country_long" : "United States"
-              },
-              "address" : "1050 Fall River Court, Estes Park, CO 80517, USA",
-              "arrival_time" : 1415109600000,
-              "departure_time" : 1415113200000
-            },
-            {
-              "coordinates" : {
-                "lat" : 40.39450095251464,
-                "lon" : -105.56532025337219
-              },
-              "skip" : false,
-              "visit_duration" : 0,
-              "name" : "nocleg",
-              "notes" : "",
-              "locality" : {
-                "town" : "Estes Park",
-                "province" : "CO",
-                "province_long" : "Colorado",
-                "country" : "US",
-                "country_long" : "United States"
-              },
-              "address" : "1354-1400 David Drive, Estes Park, CO 80517, USA",
-              "arrival_time" : 1415113280000,
-              "departure_time" : 1415196000000,
-              "track": [            
-                [
-                  40.38902,
-                  -105.56202
-                ],[
-                  40.3894,
-                  -105.56181000000001
-                ],[
-                  40.39034,
-                  -105.56259000000001
-                ],[
-                  40.39126,
-                  -105.563
-                ],[
-                  40.392860000000006,
-                  -105.56339000000001
-                ],[
-                  40.39347,
-                  -105.56389000000001
-                ],[
-                  40.394000000000005,
-                  -105.56469000000001
-                ],[
-                  40.394330000000004,
-                  -105.56506
-                ]
-              ]
-            } ],
-        "name" : "Day 1 - Tue Nov 04 2014",
-        "color": 18
-      } ]
+        {
+          "coordinates": {
+            "lat": 40.39450095251464,
+            "lon": -105.56532025337219
+          },
+          "skip": false,
+          "visit_duration": 0,
+          "name": "nocleg",
+          "notes": "",
+          "locality": {
+            "town": "Estes Park",
+            "province": "CO",
+            "province_long": "Colorado",
+            "country": "US",
+            "country_long": "United States"
+          },
+          "address": "1354-1400 David Drive, Estes Park, CO 80517, USA",
+          "arrival_time": 1415113280000,
+          "departure_time": 1415196000000,
+          "track": [
+            [
+              -105.56202,
+              40.38902
+            ],
+            [
+              -105.56181000000001,
+              40.3894
+            ],
+            [
+              -105.56259000000001,
+              40.39034
+            ],
+            [
+              -105.563,
+              40.39126
+            ],
+            [
+              -105.56339000000001,
+              40.392860000000006
+            ],
+            [
+              -105.56389000000001,
+              40.39347
+            ],
+            [
+              -105.56469000000001,
+              40.394000000000005
+            ],
+            [
+              -105.56506,
+              40.394330000000004
+            ]
+          ]
+        }
+      ],
+      "name": "Day 1 - Tue Nov 04 2014",
+      "color": 18
+    }
+  ]
 }
