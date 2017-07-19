@@ -19,12 +19,13 @@
     "KML"
   ],
   "dependencies": {
-    "gexode": "^0.1.0"
+    "gexode": "^1.0.0"
   },
   "devDependencies": {
-    "jshint": "^2.7.0",
-    "mocha": "^2.2.4",
-    "should": "^6.0.1"
+    "jshint": "~2",
+    "mocha": "~3",
+    "should": "~11",
+    "stream-buffers": "~3"
   },
   "scripts": {
     "test": "make check"

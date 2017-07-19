@@ -17,7 +17,7 @@ $ npm install --save furkot-kml
 ```js
 var kml = require('furkot-kml');
 
-kml(trip);
+kml(ostream, trip);
 ```
 
 ## License
