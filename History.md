@@ -1,4 +1,9 @@
 
+3.0.1 / 2017-08-31
+==================
+
+ * use ES6 generators to implement KML generation
+
 3.0.0 / 2017-07-18
 ==================
 
