@@ -6,7 +6,7 @@
       <name>Boston, MA</name>
       <address>Boston, MA</address>
       <Point>
-        <coordinates>-71.05977,42.35843</coordinates>
+        <coordinates>-71.059773,42.358431</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -18,7 +18,7 @@
         </Data>
       </ExtendedData>
       <Point>
-        <coordinates>-71.43241,42.94989</coordinates>
+        <coordinates>-71.432410,42.949890</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -30,7 +30,7 @@
         </Data>
       </ExtendedData>
       <Point>
-        <coordinates>-71.53198,43.20518</coordinates>
+        <coordinates>-71.531982,43.205176</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -45,14 +45,14 @@
         </Data>
       </ExtendedData>
       <Point>
-        <coordinates>-71.43241,42.94989</coordinates>
+        <coordinates>-71.432410,42.949890</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <name>Killington, VT</name>
       <address>Killington, VT</address>
       <Point>
-        <coordinates>-72.79333,43.66472</coordinates>
+        <coordinates>-72.793333,43.664722</coordinates>
       </Point>
     </Placemark>
   </Document>

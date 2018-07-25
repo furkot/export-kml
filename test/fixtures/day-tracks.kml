@@ -11,14 +11,14 @@
         </Data>
       </ExtendedData>
       <Point>
-        <coordinates>-105.56205,40.38902</coordinates>
+        <coordinates>-105.562048,40.389018</coordinates>
       </Point>
     </Placemark>
     <Placemark>
       <name>nocleg</name>
       <address>1354-1400 David Drive, Estes Park, CO 80517, USA</address>
       <Point>
-        <coordinates>-105.56532,40.39450</coordinates>
+        <coordinates>-105.565320,40.394501</coordinates>
       </Point>
     </Placemark>
     <Folder>
@@ -32,7 +32,7 @@
           </LineStyle>
         </Style>
         <LineString>
-          <coordinates>-105.56202,40.38902 -105.56181,40.38940 -105.56259,40.39034 -105.56300,40.39126 -105.56339,40.39286 -105.56389,40.39347 -105.56469,40.39400 -105.56506,40.39433</coordinates>
+          <coordinates>-105.562020,40.389020 -105.561810,40.389400 -105.562590,40.390340 -105.563000,40.391260 -105.563390,40.392860 -105.563890,40.393470 -105.564690,40.394000 -105.565060,40.394330</coordinates>
         </LineString>
       </Placemark>
     </Folder>
