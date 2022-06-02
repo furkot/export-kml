@@ -1,5 +1,5 @@
 {
-  "name": "furkot-kml",
+  "name": "@furkot/export-kml",
   "version": "3.1.0",
   "description": "Generate KML file from Furkot trip data.",
   "homepage": "https://trips.furkot.com",
@@ -8,7 +8,7 @@
     "email": "pirxpilot@code42day.com",
     "url": "https://code42day.com"
   },
-  "repository": "furkot/furkot-kml",
+  "repository": "furkot/export-kml",
   "license": "MIT",
   "keywords": [
     "furkot-kml",

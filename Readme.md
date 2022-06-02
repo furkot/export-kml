@@ -26,11 +26,11 @@ MIT © [code42day](https://code42day.com)
 
 [Furkot]: https://trips.furkot.com
 
-[npm-image]: https://img.shields.io/npm/v/furkot-kml
-[npm-url]: https://npmjs.org/package/furkot-kml
+[npm-image]: https://img.shields.io/npm/v/@furkot/export-kml
+[npm-url]: https://npmjs.org/package/@furkot/export-kml
 
-[build-image]: https://img.shields.io/github/workflow/status/furkot/furkot-kml/check
-[build-url]: https://github.com/furkot/furkot-kml/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/workflow/status/furkot/export-kml/check
+[build-url]: https://github.com/furkot/export-kml/actions/workflows/check.yaml
 
-[deps-image]: https://img.shields.io/librariesio/github/furkot/furkot-kml
-[deps-url]: https://libraries.io/npm/furkot-kml
+[deps-image]: https://img.shields.io/librariesio/release/npm/@furkot/export-kml
+[deps-url]: https://libraries.io/npm/@furkot%2Fexport-kml
