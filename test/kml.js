@@ -1,66 +1,49 @@
-var should = require('should');
-var fs = require('fs');
-var path = require('path');
-var WritableStreamBuffer = require('stream-buffers').WritableStreamBuffer;
+const should = require('should');
+const fs = require('fs');
+const path = require('path');
 
-var kml = require('../');
+const kml = require('../');
 
 function readFileSync(name) {
   return fs.readFileSync(path.join(__dirname, name), 'utf8');
 }
 
-function generateKML(t, fn) {
-  var ostream = new WritableStreamBuffer();
-  kml(ostream, t);
-  ostream
-  .on('error', fn)
-  .on('finish', function() {
-    fn(null, ostream.getContentsAsString('utf8'));
-  });
+function generateKML(t) {
+  return Array.from(kml(t)).join('');
 }
 
 describe('furkot-kml node module', function () {
-  it('simple trip', function (done) {
-    var t = require('./fixtures/simple-trip.json'),
-      expected = readFileSync('fixtures/simple.kml');
-    generateKML(t, function(err, generated) {
-      generated.should.eql(expected);
-      done(err);
-    });
+  it('simple trip', function () {
+    const t = require('./fixtures/simple-trip.json');
+    const expected = readFileSync('fixtures/simple.kml');
+    const generated = generateKML(t);
+    generated.should.eql(expected);
   });
 
-  it('multi trip', function (done) {
-    var t = require('./fixtures/multi-trip.json'),
-      expected = readFileSync('fixtures/multi.kml');
-    generateKML(t, function(err, generated) {
-      generated.should.eql(expected);
-      done(err);
-    });
+  it('multi trip', function () {
+    const t = require('./fixtures/multi-trip.json');
+    const expected = readFileSync('fixtures/multi.kml');
+    const generated = generateKML(t);
+    generated.should.eql(expected);
   });
 
-  it('day routes', function (done) {
-    var t = require('./fixtures/day-routes.json'),
-      expected = readFileSync('fixtures/day-routes.kml');
-    generateKML(t, function(err, generated) {
-      generated.should.eql(expected);
-      done(err);
-    });
+  it('day routes', function () {
+    const t = require('./fixtures/day-routes.json');
+    const expected = readFileSync('fixtures/day-routes.kml');
+    const generated = generateKML(t);
+    generated.should.eql(expected);
   });
 
-  it('day tracks', function (done) {
-    var t = require('./fixtures/day-tracks.json'),
-      expected = readFileSync('fixtures/day-tracks.kml');
-    generateKML(t, function(err, generated) {
-      generated.should.eql(expected);
-      done(err);
-    });
+  it('day tracks', function () {
+    const t = require('./fixtures/day-tracks.json');
+    const expected = readFileSync('fixtures/day-tracks.kml');
+    const generated = generateKML(t);
+    generated.should.eql(expected);
   });
 
-  it('empty polyline', function (done) {
-    var t = require('./fixtures/empty-polyline.json');
-    generateKML(t, function(err, generated) {
-      should.exist(generated);
-      done(err);
-    });
+  it('empty polyline', function () {
+    const t = require('./fixtures/empty-polyline.json');
+    const generated = generateKML(t);
+    should.exist(generated);
   });
 });
