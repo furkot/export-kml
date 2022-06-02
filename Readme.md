@@ -2,22 +2,23 @@
 [![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
 
-# furkot-kml
+# @furkot/export-kml
 
 Generate KML file from [Furkot] trip data.
 
 ## Install
 
 ```sh
-$ npm install --save furkot-kml
+$ npm install --save @furkot/export-kml
 ```
 
 ## Usage
 
 ```js
-var kml = require('furkot-kml');
+const exportKml = require('@furkot/export-kml');
 
-kml(ostream, trip);
+// data is a generator/iterable
+const data = kml(trip); 
 ```
 
 ## License
