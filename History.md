@@ -1,4 +1,11 @@
 
+4.0.0 / 2022-06-02
+==================
+
+ * rename project to @furkot/kml
+ * mark exporter encoding
+ * switch API to generator
+
 3.1.0 / 2018-07-25
 ==================
 
