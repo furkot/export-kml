@@ -1,4 +1,10 @@
 
+4.0.2 / 2023-03-21
+==================
+
+ * fix build status link in Readme
+ * update gexode to ~2
+
 4.0.1 / 2022-06-02
 ==================
 
