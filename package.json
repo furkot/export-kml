@@ -19,7 +19,7 @@
     "KML"
   ],
   "dependencies": {
-    "gexode": "^1.0.0"
+    "gexode": "~2"
   },
   "devDependencies": {
     "jshint": "~2",
