@@ -1,12 +1,15 @@
 check: lint test
 
 lint:
-	./node_modules/.bin/jshint *.js lib test
+	./node_modules/.bin/biome ci
+
+format:
+	./node_modules/.bin/biome check --fix
 
 test:
-	./node_modules/.bin/mocha --recursive --require should
+	node --test $(TEST_OPTS)
 
-validate:
-	xmllint --noout --schema http://www.opengis.net/kml/2.2 test/fixtures/*.kml
+test-cov: TEST_OPTS := --experimental-test-coverage
+test-cov: test
 
-.PHONY: check lint test validate
+.PHONY: check format lint test test-cov
