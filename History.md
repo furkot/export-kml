@@ -1,4 +1,11 @@
 
+5.0.0 / 2025-05-26
+==================
+
+ * upgrade `gexode` to ~3
+ * transition to ESM format
+ * use `biome` as a linter and formatter
+
 4.0.2 / 2023-03-21
 ==================
 

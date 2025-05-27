@@ -1,6 +1,6 @@
 {
   "name": "@furkot/export-kml",
-  "version": "4.0.2",
+  "version": "5.0.0",
   "description": "Generate KML file from Furkot trip data.",
   "homepage": "https://trips.furkot.com",
   "type": "module",
