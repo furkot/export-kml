@@ -24,7 +24,7 @@
     "KML"
   ],
   "dependencies": {
-    "gexode": "~2"
+    "gexode": "~3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
