@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { describe, it } from 'node:test';
+import test from 'node:test';
 
 import kml from '../lib/kml.js';
 
@@ -18,33 +18,31 @@ function generateKML(t) {
   return Array.from(kml(t)).join('');
 }
 
-describe('furkot-kml node module', () => {
-  it('simple trip', t => {
-    const expected = readFileSync('fixtures/simple.kml');
-    const generated = generateKML(simpleTrip);
-    t.assert.equal(generated, expected);
-  });
+test('simple trip', t => {
+  const expected = readFileSync('fixtures/simple.kml');
+  const generated = generateKML(simpleTrip);
+  t.assert.equal(generated, expected);
+});
 
-  it('multi trip', t => {
-    const expected = readFileSync('fixtures/multi.kml');
-    const generated = generateKML(multiTrip);
-    t.assert.equal(generated, expected);
-  });
+test('multi trip', t => {
+  const expected = readFileSync('fixtures/multi.kml');
+  const generated = generateKML(multiTrip);
+  t.assert.equal(generated, expected);
+});
 
-  it('day routes', t => {
-    const expected = readFileSync('fixtures/day-routes.kml');
-    const generated = generateKML(dayRoutes);
-    t.assert.equal(generated, expected);
-  });
+test('day routes', t => {
+  const expected = readFileSync('fixtures/day-routes.kml');
+  const generated = generateKML(dayRoutes);
+  t.assert.equal(generated, expected);
+});
 
-  it('day tracks', t => {
-    const expected = readFileSync('fixtures/day-tracks.kml');
-    const generated = generateKML(dayTracks);
-    t.assert.equal(generated, expected);
-  });
+test('day tracks', t => {
+  const expected = readFileSync('fixtures/day-tracks.kml');
+  const generated = generateKML(dayTracks);
+  t.assert.equal(generated, expected);
+});
 
-  it('empty polyline', t => {
-    const generated = generateKML(emptyPolyline);
-    t.assert.ok(generated);
-  });
+test('empty polyline', t => {
+  const generated = generateKML(emptyPolyline);
+  t.assert.ok(generated);
 });
